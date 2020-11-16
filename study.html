@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Devy | Encontre seus devys aqui</title>
+    <link rel="stylesheet" href="/styles/main.css" />
+    <link rel="stylesheet" href="/styles/partials/page-study.css" />
+    <link rel="stylesheet" href="/styles/partials/header.css" />
+    <link rel="stylesheet" href="/styles/partials/forms.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body id="page-study">
+
+    <div id="container">
+      <header class="page-header">
+        <div class="top-bar-container">
+          <a href="/">
+            <img src="/images/icons/back.svg" alt="Voltar" />
+          </a>
+          <img src="/images/logo.svg" alt="Devy" />
+        </div>
+
+        <div class="header-content">
+          <strong> Aqui estão os Devys disponíveis </strong>
+          <form id="search-devys">
+
+
+            <div class="select-block">
+              <label for="subject">Linguagem</label>
+              <select name="subject" id="subject">
+                <option value="" disabled="" hidden="">
+                  Selecione uma Opção
+                </option>
+                <option value="1">Java Script</option>
+                <option value="2">CSS</option>
+                <option value="3">Python</option>
+                <option value="4">Csharp</option>
+                <option value="5">Java</option>
+                <option value="6">SQL</option>
+                <option value="7">C++</option>
+                <option value="8">Swift</option>
+                <option value="9">PHP</option>
+                <option value="10">TypeScript</option>
+              </select>
+            </div>
+            <div class="select-block">
+              <label for="weekday">Dia da semana</label>
+              <select name="weekday" id="weekday">
+                <option value="" disabled="" hidden="">
+                  Selecione uma opção
+                </option>
+                <option value="0">Domingo</option>
+                <option value="1">Segunda-feira</option>
+                <option value="2">Terça-feira</option>
+                <option value="3">Quarta-feira</option>
+                <option value="4">Quinta-feira</option>
+                <option value="5">Sexta-feira</option>
+                <option value="6">Sábado</option>
+              </select>
+            </div>
+            <div class="input-block">
+              <label for="time">Hora</label>
+              <input name="time" id="time" type="time" />
+            </div>
+
+
+            <button type="submit">Filtrar</button>
+
+            
+          </form>
+        </div>
+
+
+      </header>
+
+      <main>
+        <article class="teacher-item">
+          <header>
+            <img
+              src="https://scontent.fbau3-2.fna.fbcdn.net/v/t1.0-9/90376817_2955026617894858_6776012874599890944_o.jpg?_nc_cat=110&ccb=2&_nc_sid=09cbfe&_nc_ohc=Nm1J3kbrib4AX-Z7Djp&_nc_ht=scontent.fbau3-2.fna&oh=59e55e1c76bcf63809a42fd690211594&oe=5FD24BD4"
+              alt="Márcio Morais"
+            />
+            <div>
+              <strong>Márcio Morais</strong>
+              <span>C#</span>
+            </div>
+          </header>
+
+          <p>
+            O maior fã de C# do mundo, amarrado em ASP.NET.<br /><br />Apaixonado
+            por música e pintura digital, consigo fazer de tudo com o Visual
+            Studio. Vem comigo que eu te transformo em um programador.
+          </p>
+
+          <footer>
+            <p>Preço/hora<strong>R$ 40,00</strong></p>
+            <button type="button">
+              <img src="/images/icons/whatsapp.svg" alt="Whatsapp" />Entrar em
+              contato
+            </button>
+          </footer>
+        </article>
+        <article class="teacher-item">
+          <header>
+            <img
+              src="https://scontent.fbau3-2.fna.fbcdn.net/v/t1.0-9/90376817_2955026617894858_6776012874599890944_o.jpg?_nc_cat=110&ccb=2&_nc_sid=09cbfe&_nc_ohc=Nm1J3kbrib4AX-Z7Djp&_nc_ht=scontent.fbau3-2.fna&oh=59e55e1c76bcf63809a42fd690211594&oe=5FD24BD4"
+              alt="Márcio Morais"
+            />
+            <div>
+              <strong>Márcio Morais</strong>
+              <span>C#</span>
+            </div>
+          </header>
+
+          <p>
+            O maior fã de C# do mundo, amarrado em ASP.NET.<br /><br />Apaixonado
+            por música e pintura digital, consigo fazer de tudo com o Visual
+            Studio. Vem comigo que eu te transformo em um programador.
+          </p>
+
+          <footer>
+            <p>Preço/hora<strong>R$ 40,00</strong></p>
+            <button type="button">
+              <img src="/images/icons/whatsapp.svg" alt="Whatsapp" />Entrar em
+              contato
+            </button>
+          </footer>
+        </article>
+      </main>
+    </div>
+  </body>
+</html>
