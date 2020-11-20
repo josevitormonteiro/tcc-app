@@ -12,14 +12,12 @@
   height: 5.6rem;
   margin-top: 0.8rem;
   border-radius: 0.8rem;
-  color: #fff;
+  color: white;
   background: var(--color-input-background);
-
   outline: 0;
   padding: 0 1.6rem;
   font: 1.6rem Archivo;
 }
-
 .textarea-block textarea {
   padding: 1.2rem 1.6rem;
   height: 16rem;

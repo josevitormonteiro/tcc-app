@@ -1,8 +1,8 @@
 :root {
-  --color-background: #121214;
+  --color-background: #202024;
   --color-primary-lighter:#18181a;
   --color-primary-light:#2b2a2a;
-  --color-primary: #201f20;
+  --color-primary: #292829;
   --color-primary-dark: #774dd6;
   --color-primary-darker: #6842c2;
   --color-secondary: #333333;
@@ -12,9 +12,8 @@
   --color-text-title: #fff;
   --color-text-complement: #fff;
   --color-text-base: #fff;
-  --color-line-in-white: #201F20;
-  --color-line-in-white-2: #fff;
-  --color-input-background: #201F20;
+  --color-line-in-white: #474747;
+  --color-input-background: #333333;
   --color-button-text: #ffffff;
   --color-box-base: #201f20; 
   --color-box-footer: #201f20;
