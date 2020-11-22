@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Devy | Encontre seus devys aqui</title>
+    <link rel="stylesheet" href="/styles/main.css" />
+    <link rel="stylesheet" href="/styles/partials/page-study.css" />
+    <link rel="stylesheet" href="/styles/partials/header.css" />
+    <link rel="stylesheet" href="/styles/partials/forms.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body id="page-study">
+
+    <div id="container">
+      <header class="page-header">
+        <div class="top-bar-container">
+          <a href="/">
+            <img src="/images/icons/back.svg" alt="Voltar" />
+          </a>
+          <img src="/images/logo.svg" alt="Devy" />
+        </div>
+
+        <div class="header-content">
+          <strong> Aqui estão os Devys disponíveis </strong>
+          <form id="search-devys">
+
+
+            <div class="select-block">
+              <label for="subject">Linguagem</label>
+              <select name="subject" id="subject">
+                <option value="" disabled="" hidden="">
+                  Selecione uma Opção
+                </option>
+
+
+                {%for subject in subjects %}
+                <option value="{{loop.index}}" {{ "selected"  if filters.subject ==  loop.index }} >
+                  {{subject}}
+                </option>
+                  {%endfor%}
+              </select>
+            </div>
+            <div class="select-block">
+              <label for="weekday">Dia da semana</label>
+              <select name="weekday" id="weekday">
+                <option value="" disabled="" hidden="">
+                  Selecione uma opção
+                </option>
+                {%for weekday in weekdays %}
+                <option value="{{loop.index0}}" {{ "selected" if filters.weekday == loop.index0 }}  > 
+                  {{weekday}}
+                </option>
+              {%endfor%}
+              </select>
+            </div>
+            <div class="input-block">
+              <label for="time">Hora</label>
+              <input name="time" id="time" type="time" value="{{filters.time}}" />
+            </div>
+
+
+            <button type="submit">Filtrar</button>
+
+            
+          </form>
+        </div>
+
+
+      </header>
+
+      <main>
+
+        {%for  devy in devys%}
+        <article class="teacher-item">
+          <header>
+            <img
+              src="{{devy.avatar}}"
+              alt="{{devy.name}}"
+            />
+            <div>
+              <strong>{{devy.name}}</strong>
+              <span>{{devy.subject}}</span>
+            </div>
+          </header>
+
+          <p>
+            {{devy.bio}}
+          </p>
+
+          <footer>
+            <p>Preço/hora<strong>R$ {{devy.cost}}</strong></p>
+              <a href="https://api.whatsapp.com/send?l=pt_BR&phone=55{{devy.name}}&
+              text=Tenho interesse na sua aula de {{devy.subject}} {{devy.name}}"
+              class="button" target="_blank">
+              <img src="/images/icons/whatsapp.svg" alt="Whatsapp"> Entrar em contato
+              </a>
+          </footer>
+        </article>
+    {%endfor%}
+        
+
+
+      </main>
+    </div>
+  </body>
+</html>
